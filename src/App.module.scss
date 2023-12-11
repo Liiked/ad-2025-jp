@@ -1,0 +1,66 @@
+.app {
+	max-width: 1080px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+.header {
+	position: relative;
+	height: 1762px;
+	width: 100%;
+	.bk-1{
+		position: absolute;
+		top: 0;
+		z-index: -1;
+	}
+	.top-content {
+		display: flex;
+		padding: 8rem 4rem 2rem 4rem;
+		.left{
+			.title {
+				font-family: '宋体';
+				color: #323849;
+				font-size: 50px;
+        letter-spacing: -2px;
+			}
+			.sub-title {
+				font-family: '宋体';
+				color: #323849;
+				font-size: 40px;
+        position: relative;
+        z-index: 10;
+        margin-top: 1rem;
+        h4 {
+          padding: 4px 12px;
+        }
+				&::after {
+          position: absolute;
+          top: 0;
+					content: '';
+					width: 4.6em;
+					height: 100%;
+					background-color: rgba($color: #fff, $alpha: 0.5);
+          transform: skewX(-14deg);
+          z-index: -1;
+				}
+			}
+		}
+
+	}
+  .bottom-content {
+    margin-top: 64rem;
+    .description {
+      margin-left: 60%;
+      font-size: 22px;
+      color: #323849;
+      line-height: 1.5;
+    }
+    .logo {
+      margin-top:10rem;
+      margin-left: 70%;
+    }
+  }
+}
+.inner-content {
+	
+}
+

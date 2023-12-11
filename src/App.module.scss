@@ -1,51 +1,62 @@
-.app {
-	max-width: 1080px;
-	margin: 0 auto;
-	font-size: 16px;
+$defaultColor: #eee;
+$redColor: #b41c22;
+$lightBlue: #e7f1fa;
+
+// 公共
+.red-text {
+  color: $redColor;
 }
+
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #323849;
+}
+
 .header {
-	position: relative;
-	height: 1762px;
-	width: 100%;
-	.bk-1{
-		position: absolute;
-		top: 0;
-		z-index: -1;
-	}
-	.top-content {
-		display: flex;
-		padding: 8rem 4rem 2rem 4rem;
-		.left{
-			.title {
-				font-family: '宋体';
-				color: #323849;
-				font-size: 50px;
+  position: relative;
+  height: 1762px;
+  width: 100%;
+  z-index: 1;
+  .bk-1 {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .top-content {
+    display: flex;
+    padding: 8rem 4rem 2rem 4rem;
+    .left {
+      .title {
+        font-family: "宋体";
+        color: #323849;
+        font-size: 50px;
         letter-spacing: -2px;
-			}
-			.sub-title {
-				font-family: '宋体';
-				color: #323849;
-				font-size: 40px;
+      }
+      .sub-title {
+        font-family: "宋体";
+        color: #323849;
+        font-size: 40px;
         position: relative;
         z-index: 10;
         margin-top: 1rem;
         h4 {
           padding: 4px 12px;
         }
-				&::after {
+        &::after {
           position: absolute;
           top: 0;
-					content: '';
-					width: 4.6em;
-					height: 100%;
-					background-color: rgba($color: #fff, $alpha: 0.5);
+          content: "";
+          width: 4.6em;
+          height: 100%;
+          background-color: rgba($color: #fff, $alpha: 0.5);
           transform: skewX(-14deg);
           z-index: -1;
-				}
-			}
-		}
-
-	}
+        }
+      }
+    }
+  }
   .bottom-content {
     margin-top: 64rem;
     .description {
@@ -55,12 +66,83 @@
       line-height: 1.5;
     }
     .logo {
-      margin-top:10rem;
+      margin-top: 10rem;
       margin-left: 70%;
     }
   }
 }
-.inner-content {
-	
+.activity {
+  .head {
+    position: relative;
+    z-index: 1;
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+    .description {
+      padding-top: 6.4rem;
+      text-align: center;
+      font-size: 42px;
+      color: #323849;
+      line-height: 2;
+    }
+  }
+  .body {
+    background-color: #e7f1fa;
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .foot {
+    background-color: white;
+    padding: 2rem;
+    .activity-shop-name {
+      font-size: 34px;
+      padding: 8px 16px;
+      border-radius: 1em;
+      width: 4em;
+      text-align: center;
+      background-color: $lightBlue;
+    }
+    ol {
+      margin-top: 2rem;
+      list-style: initial;
+      font-size: 24px;
+      margin-left: 1rem;
+      li {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
 
+.product-card {
+  padding: 4rem;
+  width: 90%;
+  .title {
+    background-color: #fff;
+    font-size: 38px;
+    border-radius: 1em;
+    width: 4em;
+    padding: 8px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  .pic {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .content {
+    ol {
+      list-style: initial;
+      font-size: 24px;
+      letter-spacing: -1px;
+      li {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

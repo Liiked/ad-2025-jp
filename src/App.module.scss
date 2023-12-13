@@ -44,13 +44,13 @@ $grayFontColor: #4b4e53;
     padding: 128px 64px 32px 64px;
     .left {
       .title {
-        font-family: "宋体";
+        font-family: "Simsun";
         color: #323849;
         font-size: 46px;
         letter-spacing: -2px;
       }
       .sub-title {
-        font-family: "宋体";
+        font-family: "Simsun";
         color: #323849;
         font-size: 38px;
         position: relative;
@@ -111,9 +111,13 @@ $grayFontColor: #4b4e53;
     .description {
       padding-top: 86px;
       text-align: center;
-      font-size: 42px;
+      font-size: 36px;
       color: #323849;
-      line-height: 2;
+      line-height: 1.6;
+      .additional-description {
+        font-size: 22px;
+        margin-top: 22px;
+      }
     }
   }
   .body {
@@ -163,6 +167,11 @@ $grayFontColor: #4b4e53;
     .pic {
       text-align: center;
       margin-top: 64px;
+      .extra-description {
+        font-family: "Simsun";
+        font-size: 48px;
+        margin: 40px auto;
+      }
       .activity-1 {
         width: 760px;
       }
@@ -174,8 +183,8 @@ $grayFontColor: #4b4e53;
       ol {
         list-style: initial;
         font-size: 24px;
-        letter-spacing: -1px;
         color: #33363b;
+        line-height: 1.6;
         li {
           font-size: 24px;
           margin-bottom: 32px;
@@ -300,7 +309,7 @@ $grayFontColor: #4b4e53;
       h4 {
         font-size: 42px;
         padding-top: 20px;
-        font-family: "宋体";
+        font-family: "Simsun";
       }
     }
     .body-part {

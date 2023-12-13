@@ -70,12 +70,22 @@ function App() {
               <br />
               即可
               <span className={styles["red-text"]}>获赠“指定版活动产品"</span>。
+              <p className={styles["additional-description"]}>
+                12/15〜12/28の期間中にこちらの画面を見せ、対象商品をご購入の方に
+                <br />
+                「対象商品のミニサイズ」をプレゼント！
+              </p>
             </div>
           </div>
           <div className={styles["body"]}>
             <div className={styles["product-card"]}>
               <div className={styles["title"]}>活动1</div>
               <div className={styles["pic"]}>
+                <p className={styles["extra-description"]}>
+                  紫外线较强的春季来临之际，
+                  <br />
+                  推荐使用焕白亮肤肌底精华（啫喱）
+                </p>
                 <img className={styles["activity-1"]} src={Activity1} alt="" />
               </div>
               <div className={styles["content"]}>

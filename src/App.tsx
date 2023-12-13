@@ -1,5 +1,3 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import styles from "./App.module.scss";
 import Back1 from "./assets/imgs/header-background_1.png";
@@ -49,7 +47,7 @@ function App() {
                 <h4>赠品活动</h4>
               </div>
             </div>
-            <div className="right">
+            <div className={styles["right"]}>
               <img src={Logo1} alt="" />
             </div>
           </div>
@@ -78,7 +76,7 @@ function App() {
             <div className={styles["product-card"]}>
               <div className={styles["title"]}>活动1</div>
               <div className={styles["pic"]}>
-                <img src={Activity1} alt="" />
+                <img className={styles["activity-1"]} src={Activity1} alt="" />
               </div>
               <div className={styles["content"]}>
                 <ol>
@@ -93,7 +91,7 @@ function App() {
             <div className={styles["product-card"]}>
               <div className={styles["title"]}>活动2</div>
               <div className={styles["pic"]}>
-                <img src={Activity2} alt="" />
+                <img className={styles["activity-2"]} src={Activity2} alt="" />
               </div>
               <div className={styles["content"]}>
                 <ol>
@@ -131,7 +129,7 @@ function App() {
               </div>
               <div className={styles["body"]}>
                 <img src={Illustration1} alt="" />
-                <img src={DownArrow} alt="" />
+                <img className={styles["down-arrow"]} src={DownArrow} alt="" />
                 <p>
                   通过在照片胶片领域积累的独特纳米技术，
                   <br /> 将成分极小化至约
@@ -157,7 +155,7 @@ function App() {
               </div>
               <div className={styles["body"]}>
                 <img src={Illustration3} alt="" />
-                <img src={DownArrow} alt="" />
+                <img className={styles["down-arrow"]} src={DownArrow} alt="" />
                 <p>
                   运用独特纳米技术，创造出对肌肤亲和力高的 <br />
                   <span className={styles["red-text"]}>超小</span>
@@ -176,7 +174,7 @@ function App() {
               </div>
               <div className={styles["body"]}>
                 <img src={Illustration4} alt="" />
-                <img src={DownArrow} alt="" />
+                <img className={styles["down-arrow"]} src={DownArrow} alt="" />
                 <p>
                   虾青素是一种红色的天然色素（类胡萝卜素），
                   <br />
@@ -208,13 +206,16 @@ function App() {
             <div className={styles["title-part"]}>
               <h4>焕白亮肤肌底精华（啫喱）60g</h4>
               <img
-                className={styles["product-box-background"]}
+                className={cls(
+                  styles["product-box-background"],
+                  styles["box-1"]
+                )}
                 src={TitleBox1}
                 alt=""
               />
             </div>
             <div className={styles["body-part"]}>
-              <img src={Product1} alt="" />
+              <img className={styles["product-1"]} src={Product1} alt="" />
               <ol>
                 <li>
                   从强化肌肤各层的屏障功能到亮肤和对抗岁月痕迹。让洁肤后的肌肤
@@ -227,7 +228,11 @@ function App() {
                   等各种美容成分，以及亮肤有效成分。
                 </li>
               </ol>
-              <img src={ProductIllustration1} alt="" />
+              <img
+                className={styles["illustration"]}
+                src={ProductIllustration1}
+                alt=""
+              />
             </div>
           </div>
           <div
@@ -239,13 +244,20 @@ function App() {
             <div className={styles["title-part"]}>
               <h4>净皙钻白深层防晒隔离美容液 30g</h4>
               <img
-                className={styles["product-box-background"]}
+                className={cls(
+                  styles["product-box-background"],
+                  styles["box-2"]
+                )}
                 src={TitleBox2}
                 alt=""
               />
             </div>
             <div className={styles["body-part"]}>
-              <img className={styles["bottom-m-2"]} src={Product2} alt="" />
+              <img
+                className={cls(styles["product-2"], styles["bottom-m-2"])}
+                src={Product2}
+                alt=""
+              />
               <ol>
                 <li>
                   不仅能阻断深层紫外线，还能防止
@@ -263,12 +275,16 @@ function App() {
                 </li>
               </ol>
               <img
-                className={cls(styles["top-m-2"], styles["bottom-m-2"])}
+                className={cls(
+                  styles["illustration"],
+                  styles["top-m-2"],
+                  styles["bottom-m-2"]
+                )}
                 src={ProductIllustration3}
                 alt=""
               />
               <img
-                className={styles["bottom-m-2"]}
+                className={cls(styles["illustration"], styles["bottom-m-2"])}
                 src={ProductIllustration2}
                 alt=""
               />

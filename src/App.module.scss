@@ -12,10 +12,10 @@ $grayFontColor: #4b4e53;
   font-size: 24px;
 }
 .top-m-2 {
-  margin-top: 2rem;
+  margin-top: 32px;
 }
 .bottom-m-2 {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .app {
@@ -23,35 +23,39 @@ $grayFontColor: #4b4e53;
   margin: 0 auto;
   font-size: 16px;
   color: #323849;
+  img {
+    max-width: 100%;
+  }
 }
 
 .header {
   position: relative;
-  height: 1762px;
+  height: 1680px;
   width: 100%;
   z-index: 1;
   .bk-1 {
     position: absolute;
     top: 0;
     z-index: -1;
+    max-width: 100%;
   }
   .top-content {
     display: flex;
-    padding: 8rem 4rem 2rem 4rem;
+    padding: 128px 64px 32px 64px;
     .left {
       .title {
         font-family: "宋体";
         color: #323849;
-        font-size: 50px;
+        font-size: 46px;
         letter-spacing: -2px;
       }
       .sub-title {
         font-family: "宋体";
         color: #323849;
-        font-size: 40px;
+        font-size: 38px;
         position: relative;
         z-index: 10;
-        margin-top: 1rem;
+        margin-top: 16px;
         h4 {
           padding: 4px 12px;
         }
@@ -67,9 +71,16 @@ $grayFontColor: #4b4e53;
         }
       }
     }
+    .right {
+      flex-shrink: 0;
+      margin-left: 80px;
+      > img {
+        width: 178px;
+      }
+    }
   }
   .bottom-content {
-    margin-top: 64rem;
+    margin-top: 1026px;
     .description {
       margin-left: 60%;
       font-size: 22px;
@@ -77,12 +88,17 @@ $grayFontColor: #4b4e53;
       line-height: 1.5;
     }
     .logo {
-      margin-top: 10rem;
-      margin-left: 70%;
+      margin-top: 140px;
+      margin-left: 800px;
+      img {
+        width: 236px;
+      }
     }
   }
 }
 .activity {
+  width: 1000px;
+  margin: 0 auto;
   .head {
     position: relative;
     z-index: 1;
@@ -93,7 +109,7 @@ $grayFontColor: #4b4e53;
       z-index: -1;
     }
     .description {
-      padding-top: 6.4rem;
+      padding-top: 86px;
       text-align: center;
       font-size: 42px;
       color: #323849;
@@ -102,16 +118,19 @@ $grayFontColor: #4b4e53;
   }
   .body {
     background-color: #e7f1fa;
-    margin-top: 68px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    & > img {
+      width: 100%;
+    }
   }
   .foot {
     background-color: white;
-    padding: 2rem;
+    padding: 32px;
     .activity-shop-name {
-      font-size: 34px;
+      font-size: 32px;
       padding: 8px 18px;
       border-radius: 1em;
       width: 4em;
@@ -119,45 +138,91 @@ $grayFontColor: #4b4e53;
       background-color: $lightBlue;
     }
     ol {
-      margin-top: 2rem;
+      margin-top: 32px;
       list-style: initial;
       font-size: 24px;
-      margin-left: 1rem;
+      margin-left: 16px;
       li {
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
       }
+    }
+  }
+  .product-card {
+    padding: 54px;
+    padding-bottom: 0;
+    width: 90%;
+    .title {
+      background-color: #fff;
+      font-size: 34px;
+      border-radius: 1em;
+      width: 4em;
+      padding: 8px;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+    .pic {
+      text-align: center;
+      margin-top: 64px;
+      .activity-1 {
+        width: 760px;
+      }
+      .activity-2 {
+        width: 760px;
+      }
+    }
+    .content {
+      ol {
+        list-style: initial;
+        font-size: 24px;
+        letter-spacing: -1px;
+        color: #33363b;
+        li {
+          font-size: 24px;
+          margin-bottom: 32px;
+          &:last-child {
+            margin-bottom: 16px;
+          }
+        }
+      }
+      p {
+        font-size: 24px;
+        line-height: 1.6;
+      }
+    }
+    &:last-child {
+      padding-bottom: 54px;
     }
   }
 }
 
 .description-film-history {
   background-color: $lightBlue;
-  border-radius: 4rem;
-  margin-top: 5rem;
-  padding: 4rem 2rem 4rem 2rem;
+  border-radius: 64px;
+  margin-top: 80px;
+  padding: 64px 32px 64px 32px;
   .part-title {
     text-align: center;
     img {
       width: 76%;
     }
     h4 {
-      margin-top: 1rem;
+      margin-top: 16px;
       font-size: 36px;
       letter-spacing: 2px;
     }
   }
   .part-main {
-    margin-top: 6rem;
+    margin-top: 120px;
   }
   .parts {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 96px;
     > .title {
       display: flex;
       align-items: baseline;
-      padding-bottom: 2rem;
+      padding-bottom: 32px;
       position: relative;
-      margin-bottom: 4rem;
+      margin-bottom: 64px;
 
       img {
         width: 126px;
@@ -165,7 +230,7 @@ $grayFontColor: #4b4e53;
       h2 {
         color: $redFontColor;
         font-size: 66px;
-        margin-left: 2rem;
+        margin-left: 32px;
       }
       &::after {
         content: "";
@@ -178,15 +243,22 @@ $grayFontColor: #4b4e53;
     }
     > .body {
       p {
-        font-size: 38px;
+        font-size: 36px;
         line-height: 1.6;
         &.text-small {
-          font-size: 24px;
-          margin-top: 1rem;
+          font-size: 22px;
+          margin-top: 16px;
         }
       }
+      img {
+        width: 100%;
+      }
       .special-addition {
-        margin-top: 4rem;
+        width: 500px;
+        margin-top: 64px;
+      }
+      .down-arrow {
+        width: 300px;
       }
     }
     > .descript {
@@ -196,19 +268,21 @@ $grayFontColor: #4b4e53;
 
 .description-astalift {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 64px;
   .product-detail-card {
+    width: 1000px;
+    margin: 0 auto;
     border: 2px solid rgba($color: #fff, $alpha: 0.5);
-    border-radius: 4rem;
+    border-radius: 64px;
     background-color: rgba($color: #fff, $alpha: 0.5);
     box-shadow: inset #bfc9d1 0px 0px 10px;
-    padding-bottom: 2rem;
-    margin-bottom: 4rem;
+    padding-bottom: 32px;
+    margin-bottom: 64px;
     .title-part {
       position: relative;
       height: 84px;
       z-index: 1;
-      margin-bottom: 4rem;
+      margin-bottom: 64px;
 
       .product-box-background {
         position: absolute;
@@ -216,6 +290,12 @@ $grayFontColor: #4b4e53;
         left: 50%;
         transform: translateX(-50%);
         z-index: -1;
+        &.box-1 {
+          width: 620px;
+        }
+        &.box-2 {
+          width: 680px;
+        }
       }
       h4 {
         font-size: 42px;
@@ -224,21 +304,30 @@ $grayFontColor: #4b4e53;
       }
     }
     .body-part {
+      .product-1 {
+        width: 300px;
+      }
+      .product-2 {
+        width: 96px;
+      }
       ol {
         color: $grayFontColor;
         list-style: initial;
         font-size: 32px;
         text-align: left;
         line-height: 1.6;
-        margin-left: 4rem;
-        margin-right: 2rem;
+        margin-left: 64px;
+        margin-right: 32px;
+      }
+      .illustration {
+        width: 800px;
       }
     }
   }
 }
 
 .shop-list {
-  margin-top: 10rem;
+  margin-top: 160px;
   .shop-title {
     text-align: center;
   }
@@ -253,16 +342,16 @@ $grayFontColor: #4b4e53;
       background-color: white;
       border: 1px solid $redColor;
       box-shadow: $redColor 2px 2px 0;
-      margin-bottom: 2rem;
+      margin-bottom: 32px;
     }
     .list {
       .list-item {
         background-color: white;
         box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.2);
-        padding: 1rem;
-        margin-bottom: 2rem;
+        padding: 16px;
+        margin-bottom: 32px;
         .list-head {
-          margin-bottom: 1rem;
+          margin-bottom: 16px;
           img {
             width: 100%;
           }
@@ -275,14 +364,14 @@ $grayFontColor: #4b4e53;
           border-radius: 1em;
           font-size: 18px;
           max-width: 80%;
-          margin-bottom: 0.5rem;
+          margin-bottom: 8px;
           img {
             width: 16px;
             margin-right: 4px;
           }
         }
         p {
-          margin-bottom: 0.5rem;
+          margin-bottom: 8px;
         }
       }
     }
@@ -290,42 +379,10 @@ $grayFontColor: #4b4e53;
 }
 
 .bottom-logo {
-  padding-top: 8rem;
-  padding-bottom: 20rem;
+  padding-top: 60px;
+  padding-bottom: 180px;
   text-align: center;
-}
-
-.product-card {
-  padding: 4rem;
-  width: 90%;
-  .title {
-    background-color: #fff;
-    font-size: 38px;
-    border-radius: 1em;
-    width: 4em;
-    padding: 8px;
-    letter-spacing: 4px;
-    text-align: center;
-  }
-  .pic {
-    text-align: center;
-    margin-top: 4rem;
-  }
-  .content {
-    ol {
-      list-style: initial;
-      font-size: 24px;
-      letter-spacing: -1px;
-      li {
-        margin-bottom: 2rem;
-        &:last-child {
-          margin-bottom: 1rem;
-        }
-      }
-    }
-    p {
-      font-size: 24px;
-      line-height: 1.6;
-    }
+  img {
+    width: 220px;
   }
 }

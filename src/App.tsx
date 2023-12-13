@@ -41,7 +41,7 @@ function App() {
           <div className={styles["top-content"]}>
             <div className={styles["left"]}>
               <h1 className={styles["title"]}>
-                购买富士胶片旗下的艾诗缇化妆品, 即可获赠精美礼品！
+                购买富士胶片旗下的艾诗缇化妆品, 有机会获赠精美礼品！
               </h1>
               <div className={styles["sub-title"]}>
                 <h4>赠品活动</h4>
@@ -66,9 +66,10 @@ function App() {
           <div className={styles["head"]}>
             <img src={ActivityBack} alt="" />
             <div className={styles["description"]}>
-              凡在12月15日至28日期间 <br /> 凭此活动页面购买指定产品的顾客
+              凡在12月15日至28日期间 <br />{" "}
+              凭此活动页面在指定店铺购买指定产品的顾客
               <br />
-              即可
+              有机会
               <span className={styles["red-text"]}>获赠“指定版活动产品"</span>。
               <p className={styles["additional-description"]}>
                 12/15〜12/28の期間中にこちらの画面を見せ、対象商品をご購入の方に

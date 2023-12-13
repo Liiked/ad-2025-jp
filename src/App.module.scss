@@ -109,20 +109,20 @@ $grayFontColor: #4b4e53;
       z-index: -1;
     }
     .description {
-      padding-top: 86px;
+      padding-top: 76px;
       text-align: center;
       font-size: 36px;
       color: #323849;
       line-height: 1.6;
       .additional-description {
-        font-size: 22px;
-        margin-top: 22px;
+        font-size: 28px;
+        margin-top: 20px;
       }
     }
   }
   .body {
     background-color: #e7f1fa;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -171,6 +171,7 @@ $grayFontColor: #4b4e53;
         font-family: "Simsun";
         font-size: 48px;
         margin: 40px auto;
+        line-height: 1.4;
       }
       .activity-1 {
         width: 760px;

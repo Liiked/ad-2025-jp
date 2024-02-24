@@ -48,6 +48,7 @@ $grayFontColor: #4b4e53;
         color: #323849;
         font-size: 46px;
         letter-spacing: -2px;
+        line-height: 1.4;
       }
       .sub-title {
         font-family: "Simsun";
@@ -279,6 +280,11 @@ $grayFontColor: #4b4e53;
 .description-astalift {
   text-align: center;
   margin-top: 64px;
+  padding-bottom: 160px;
+  // background: url(@/assets/imgs/bottom_back_top_part.jpg) bottom no-repeat,
+  //   linear-gradient(0deg, #d7e8fc 50%, #d7e8fc 20%, #cbd9ee);
+  // background-size: contain;
+
   .product-detail-card {
     width: 1000px;
     margin: 0 auto;
@@ -337,7 +343,6 @@ $grayFontColor: #4b4e53;
 }
 
 .shop-list {
-  margin-top: 160px;
   .shop-title {
     text-align: center;
   }
@@ -345,7 +350,7 @@ $grayFontColor: #4b4e53;
     width: 60%;
     margin: 0 auto;
     h4 {
-      width: 8em;
+      max-width: 10em;
       font-size: 28px;
       padding: 6px 12px;
       text-align: center;
@@ -395,4 +400,11 @@ $grayFontColor: #4b4e53;
   img {
     width: 220px;
   }
+}
+
+.bottom-background-area {
+  background: url(@/assets/imgs/bottom_background.png) 20% 80% no-repeat,
+    linear-gradient(180deg, #cbd9ee 10%, #d5e7fe 15%);
+  background-position: bottom;
+  background-size: contain;
 }

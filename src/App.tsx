@@ -302,90 +302,92 @@ function App() {
             </div>
           </div>
         </section>
-        <section className={styles["shop-list"]}>
-          <div className={styles["shop-title"]}>
-            <img src={ShopTitle} alt="" />
-          </div>
-          <div className={styles["shop-sect"]}>
-            <h4>ASTALIFT 直营店</h4>
-            <div className={styles["list"]}>
-              <div className={styles["list-item"]}>
-                <div className={styles["list-head"]}>
-                  <img src={Shop1} alt="" />
+        <section className={styles["bottom-background-area"]}>
+          <section className={styles["shop-list"]}>
+            <div className={styles["shop-title"]}>
+              <img src={ShopTitle} alt="" />
+            </div>
+            <div className={styles["shop-sect"]}>
+              <h4>ASTALIFT 直营店</h4>
+              <div className={styles["list"]}>
+                <div className={styles["list-item"]}>
+                  <div className={styles["list-head"]}>
+                    <img src={Shop1} alt="" />
+                  </div>
+                  <div className={styles["location"]}>
+                    <img src={LocationIcon} alt="" />
+                    银座店（ASTALIFT GINZA）
+                  </div>
+                  <p className="mail-code">邮编：104-0061</p>
+                  <p className="addr">地址：东京都中央区银座 3丁目2-13</p>
+                  <p className="open-time">营业时间：11:00～20:00</p>
                 </div>
-                <div className={styles["location"]}>
-                  <img src={LocationIcon} alt="" />
-                  银座店（ASTALIFT GINZA）
+                <div className={styles["list-item"]}>
+                  <div className={styles["list-head"]}>
+                    <img src={Shop2} alt="" />
+                  </div>
+                  <div className={styles["location"]}>
+                    <img src={LocationIcon} alt="" />
+                    六本木店（ASTALIFT ROPPONGI）
+                  </div>
+                  <p className="mail-code">邮编：107-0052</p>
+                  <p className="addr">
+                    地址：东京都港区赤坂 9丁目7-3 东京中城 WEST 富士胶片总部大楼
+                    1F
+                  </p>
+                  <p className="open-time">营业时间：10:00～19:00</p>
                 </div>
-                <p className="mail-code">邮编：104-0061</p>
-                <p className="addr">地址：东京都中央区银座 3丁目2-13</p>
-                <p className="open-time">营业时间：11:00～20:00</p>
-              </div>
-              <div className={styles["list-item"]}>
-                <div className={styles["list-head"]}>
-                  <img src={Shop2} alt="" />
-                </div>
-                <div className={styles["location"]}>
-                  <img src={LocationIcon} alt="" />
-                  六本木店（ASTALIFT ROPPONGI）
-                </div>
-                <p className="mail-code">邮编：107-0052</p>
-                <p className="addr">
-                  地址：东京都港区赤坂 9丁目7-3 东京中城 WEST 富士胶片总部大楼
-                  1F
-                </p>
-                <p className="open-time">营业时间：10:00～19:00</p>
               </div>
             </div>
-          </div>
-          <div className={styles["shop-sect"]}>
-            <h4>杉木药店</h4>
-            <div className={styles["list"]}>
-              <div className={styles["list-item"]}>
-                <div className={styles["list-head"]}>
-                  <img src={Shop3} alt="" />
+            <div className={styles["shop-sect"]}>
+              <h4>杉木药店</h4>
+              <div className={styles["list"]}>
+                <div className={styles["list-item"]}>
+                  <div className={styles["list-head"]}>
+                    <img src={Shop3} alt="" />
+                  </div>
+                  <div className={styles["location"]}>
+                    <img src={LocationIcon} alt="" />
+                    浅草店
+                  </div>
+                  <p className="mail-code">邮编：111-0032</p>
+                  <p className="addr">地址：东京都台东区浅草 1丁目29-1</p>
+                  <p className="open-time">营业时间：9:00～23:00</p>
                 </div>
-                <div className={styles["location"]}>
-                  <img src={LocationIcon} alt="" />
-                  浅草店
+                <div className={styles["list-item"]}>
+                  <div className={styles["list-head"]}>
+                    <img src={Shop4} alt="" />
+                  </div>
+                  <div className={styles["location"]}>
+                    <img src={LocationIcon} alt="" />
+                    心斋桥店
+                  </div>
+                  <p className="mail-code">邮编：542-0085</p>
+                  <p className="addr">
+                    地址：大阪府大阪市中央区心斋桥筋一丁目3番22号
+                  </p>
+                  <p className="open-time">营业时间：10:00～23:00</p>
                 </div>
-                <p className="mail-code">邮编：111-0032</p>
-                <p className="addr">地址：东京都台东区浅草 1丁目29-1</p>
-                <p className="open-time">营业时间：9:00～23:00</p>
-              </div>
-              <div className={styles["list-item"]}>
-                <div className={styles["list-head"]}>
-                  <img src={Shop4} alt="" />
+                <div className={styles["list-item"]}>
+                  <div className={styles["list-head"]}>
+                    <img src={Shop5} alt="" />
+                  </div>
+                  <div className={styles["location"]}>
+                    <img src={LocationIcon} alt="" />
+                    新宿三丁目店
+                  </div>
+                  <p className="mail-code">邮编：160-0022</p>
+                  <p className="addr">
+                    东京都新宿区新宿三丁目5番6号 Q 广场新宿三丁目 1楼
+                  </p>
+                  <p className="open-time">营业时间：9:00～23:00</p>
                 </div>
-                <div className={styles["location"]}>
-                  <img src={LocationIcon} alt="" />
-                  心斋桥店
-                </div>
-                <p className="mail-code">邮编：542-0085</p>
-                <p className="addr">
-                  地址：大阪府大阪市中央区心斋桥筋一丁目3番22号
-                </p>
-                <p className="open-time">营业时间：10:00～23:00</p>
-              </div>
-              <div className={styles["list-item"]}>
-                <div className={styles["list-head"]}>
-                  <img src={Shop5} alt="" />
-                </div>
-                <div className={styles["location"]}>
-                  <img src={LocationIcon} alt="" />
-                  新宿三丁目店
-                </div>
-                <p className="mail-code">邮编：160-0022</p>
-                <p className="addr">
-                  东京都新宿区新宿三丁目5番6号 Q 广场新宿三丁目 1楼
-                </p>
-                <p className="open-time">营业时间：9:00～23:00</p>
               </div>
             </div>
-          </div>
-        </section>
-        <section className={styles["bottom-logo"]}>
-          <img src={Logo2} alt="" />
+          </section>
+          <section className={styles["bottom-logo"]}>
+            <img src={Logo2} alt="" />
+          </section>
         </section>
       </div>
     </>

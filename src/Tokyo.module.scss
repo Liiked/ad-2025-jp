@@ -34,7 +34,7 @@ $grayFontColor: #4b4e53;
   margin-bottom: 32px;
 }
 
-.app {
+.app-tokyo {
   max-width: 1080px;
   margin: 0 auto;
   font-size: 16px;
@@ -46,7 +46,7 @@ $grayFontColor: #4b4e53;
 
 .header {
   position: relative;
-  height: 1680px;
+  height: 1880px;
   width: 100%;
   z-index: 1;
   .bk-1 {
@@ -57,7 +57,8 @@ $grayFontColor: #4b4e53;
   }
   .top-content {
     display: flex;
-    padding: 128px 64px 32px 64px;
+    padding: 270px 64px 32px 64px;
+    justify-content: space-between;
     .left {
       .title {
         font-family: "Simsun";
@@ -90,7 +91,6 @@ $grayFontColor: #4b4e53;
     }
     .right {
       flex-shrink: 0;
-      margin-left: 80px;
       > img {
         width: 178px;
       }
@@ -120,6 +120,7 @@ $grayFontColor: #4b4e53;
   .head {
     position: relative;
     z-index: 1;
+    // background-color: red;
     img {
       width: 100%;
       position: absolute;
@@ -127,20 +128,36 @@ $grayFontColor: #4b4e53;
       z-index: -1;
     }
     .description {
-      padding-top: 76px;
+      padding: 140px 100px 104px 100px;
       text-align: center;
       font-size: 36px;
       color: #323849;
-      line-height: 1.6;
-      .additional-description {
-        font-size: 28px;
-        margin-top: 20px;
+      line-height: 2;
+      position: relative;
+
+      .bottom-right-text {
+        font-size: 24px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
       }
+    }
+    .sakura-left-bottom {
+      position: absolute;
+      width: 252px;
+      left: 0;
+      top: 150px;
+    }
+    .sakura-right-top {
+      position: absolute;
+      width: 252px;
+      right: 0;
+      top: 40px;
+      rotate: 180deg;
     }
   }
   .body {
     background-color: #e7f1fa;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -151,11 +168,12 @@ $grayFontColor: #4b4e53;
   .foot {
     background-color: white;
     padding: 32px;
+    position: relative;
     .activity-shop-name {
       font-size: 32px;
       padding: 8px 18px;
       border-radius: 1em;
-      width: 4em;
+      width: 7em;
       text-align: center;
       background-color: $lightBlue;
     }
@@ -164,9 +182,13 @@ $grayFontColor: #4b4e53;
       list-style: initial;
       font-size: 24px;
       margin-left: 16px;
-      li {
-        margin-bottom: 32px;
-      }
+    }
+    .sakura-bottom {
+      position: absolute;
+      width: 252px;
+      right: 20px;
+      bottom: 20px;
+      transform: rotateY(180deg);
     }
   }
   .product-card {
@@ -177,9 +199,8 @@ $grayFontColor: #4b4e53;
       background-color: #fff;
       font-size: 34px;
       border-radius: 1em;
-      width: 4em;
-      padding: 8px;
-      letter-spacing: 4px;
+      width: 6em;
+      padding: 10px 0;
       text-align: center;
     }
     .pic {
@@ -193,9 +214,11 @@ $grayFontColor: #4b4e53;
       }
       .activity-1 {
         width: 760px;
+        margin-bottom: -100px;
       }
       .activity-2 {
-        width: 760px;
+        width: 900px;
+        margin-bottom: -100px;
       }
     }
     .content {
@@ -203,12 +226,12 @@ $grayFontColor: #4b4e53;
         list-style: initial;
         font-size: 24px;
         color: #33363b;
-        line-height: 1.6;
+        line-height: 1.4;
         li {
           font-size: 24px;
-          margin-bottom: 32px;
+          margin-bottom: 14px;
           &:last-child {
-            margin-bottom: 16px;
+            margin-bottom: 0;
           }
         }
       }
@@ -297,7 +320,7 @@ $grayFontColor: #4b4e53;
 .description-astalift {
   text-align: center;
   margin-top: 64px;
-  padding-bottom: 160px;
+  padding-bottom: 20px;
   // background: url(@/assets/imgs/bottom_back_top_part.jpg) bottom no-repeat,
   //   linear-gradient(0deg, #d7e8fc 50%, #d7e8fc 20%, #cbd9ee);
   // background-size: contain;
@@ -479,12 +502,20 @@ $grayFontColor: #4b4e53;
       box-shadow: $redColor 2px 2px 0;
       margin-bottom: 32px;
     }
+    .h2-title {
+      font-family: "STSong", "Simsun";
+      font-weight: bolder;
+      font-size: 36px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
     .list {
       .list-item {
         background-color: white;
         box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.2);
         padding: 16px;
         margin-bottom: 32px;
+        position: relative;
         .list-head {
           margin-bottom: 16px;
           img {
@@ -498,6 +529,7 @@ $grayFontColor: #4b4e53;
           padding: 4px;
           border-radius: 1em;
           font-size: 18px;
+          font-weight: bold;
           max-width: 80%;
           margin-bottom: 8px;
           img {
@@ -508,8 +540,24 @@ $grayFontColor: #4b4e53;
         p {
           margin-bottom: 8px;
         }
+        .appendix {
+          position: absolute;
+          bottom: -2em;
+          left: 0;
+          font-size: 14px;
+        }
       }
     }
+  }
+}
+
+.shop-extra {
+  .shop-header {
+    color: $redColor;
+    margin-bottom: 6px;
+  }
+  p {
+    margin-bottom: 6px;
   }
 }
 
@@ -524,7 +572,7 @@ $grayFontColor: #4b4e53;
 
 .bottom-background-area {
   background: url(@/assets/imgs/bottom_background.png) 20% 80% no-repeat,
-    linear-gradient(180deg, #cbd9ee 10%, #d5e7fe 15%);
+    linear-gradient(180deg, #cbd9ee 0%, #d5e7fe 4%);
   background-position: bottom;
   background-size: contain;
 }

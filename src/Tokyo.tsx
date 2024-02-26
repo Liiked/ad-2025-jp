@@ -1,11 +1,11 @@
 import "./App.css";
-import styles from "./App.module.scss";
+import styles from "./Tokyo.module.scss";
 import Back1 from "./assets/imgs/header-background_1.png";
 import Logo1 from "./assets/imgs/header__logo_1.png";
 import Logo2 from "./assets/imgs/header__logo_2.png";
 import ActivityBack from "./assets/imgs/activity_header.png";
-import Activity1 from "./assets/imgs/activity_1.png";
-import Activity2 from "./assets/imgs/activity_2.png";
+import Activity1 from "./assets/imgs/tokyo_activity_product_1.png";
+import Activity2 from "./assets/imgs/tokyo_activity_product_2.png";
 import FilmTitle from "./assets/imgs/film_title.png";
 import AstaliftTitle from "./assets/imgs/astalift_title.png";
 import AssistFoodTitle from "./assets/imgs/assist_food_title.png";
@@ -33,22 +33,23 @@ import Foodillustration3 from "./assets/imgs/food_illustration_3.png";
 import Shop1 from "./assets/imgs/shop_1.png";
 import Shop2 from "./assets/imgs/shop_2.png";
 import Shop3 from "./assets/imgs/shop_3.png";
-import Shop4 from "./assets/imgs/shop_4.png";
 import Shop5 from "./assets/imgs/shop_5.png";
 import LocationIcon from "./assets/imgs/location_icon.png";
 import CompanyPic from "./assets/imgs/company.png";
+import Sakura from "./assets/imgs/sakura.png";
 import cls from "classnames";
 
 function App() {
   return (
     <>
-      <div className={styles["app"]}>
+      <div className={styles["app-tokyo"]}>
         <section className={styles["header"]}>
           <img className={styles["bk-1"]} src={Back1} alt="" />
           <div className={styles["top-content"]}>
             <div className={styles["left"]}>
               <h1 className={styles["title"]}>
-                购买富士胶片旗下的艾诗缇化妆品, 有机会获赠精美礼品！
+                富士胶片 <br />
+                来店即可获赠精美礼品！
               </h1>
               <div className={styles["sub-title"]}>
                 <h4>赠品活动</h4>
@@ -73,65 +74,55 @@ function App() {
           <div className={styles["head"]}>
             <img src={ActivityBack} alt="" />
             <div className={styles["description"]}>
-              凡在12月15日至28日期间 <br />{" "}
-              凭此活动页面在指定店铺购买指定产品的顾客
-              <br />
-              有机会
-              <span className={styles["red-text"]}>获赠“指定版活动产品"</span>。
-              <p className={styles["additional-description"]}>
-                12/15〜12/28の期間中にこちらの画面を見せ、対象商品をご購入の方に
-                <br />
-                「対象商品のミニサイズ」をプレゼント！
-              </p>
+              3月1日起凭此活动页面来店的顾客，
+              <br /> 即可获赠 来店赠品
+              <span className={styles["red-text"]}>"2天1夜旅行体验装"</span>
+              1份。
+              <p className={styles["bottom-right-text"]}>*赠品有限，赠完为止</p>
             </div>
+            <img className={styles["sakura-left-bottom"]} src={Sakura} alt="" />
+            <img className={styles["sakura-right-top"]} src={Sakura} alt="" />
           </div>
           <div className={styles["body"]}>
             <div className={styles["product-card"]}>
-              <div className={styles["title"]}>活动1</div>
+              <div className={styles["title"]}>推荐商品</div>
               <div className={styles["pic"]}>
-                <p className={styles["extra-description"]}>
-                  紫外线较强的春季来临之际，
-                  <br />
-                  推荐使用焕白亮肤肌底精华（啫喱）
-                </p>
                 <img className={styles["activity-1"]} src={Activity1} alt="" />
               </div>
               <div className={styles["content"]}>
+                <p>从左至右</p>
                 <ol>
-                  <li>
-                    购买：焕白亮肤肌底精华 (啫喱) 60g+替换套装，价格25,400日元
-                    (含税27,940日元) 的顾客
-                  </li>
-                  <li>赠送：焕白亮肤肌底精华 (啫喱) 7g (迷你) x 2 瓶</li>
+                  <li>艾诗缇 焕白亮肤肌底精华 (啫喱)</li>
+                  <li>艾诗缇 净皙钻白深层防晒隔离美容液</li>
+                  <li>艾诗缇 莹润水感深层防晒隔离美容液</li>
+                  <li>富士胶片五层龙丸 加强版</li>
                 </ol>
               </div>
             </div>
             <div className={styles["product-card"]}>
-              <div className={styles["title"]}>活动2</div>
+              <div className={styles["title"]}>来店赠品</div>
               <div className={styles["pic"]}>
                 <img className={styles["activity-2"]} src={Activity2} alt="" />
               </div>
               <div className={styles["content"]}>
+                <p>从左至右</p>
                 <ol>
-                  <li>
-                    购买：净皙钻白深层防晒隔离美容液 30g 3 件套，价格 11,700
-                    日元（含税 12,870 日元） 的顾客。
-                  </li>
-                  <li>
-                    赠送：净皙钻白深层防晒隔离美容液20g1支（约1～1.5月的量）
-                  </li>
+                  <li>①艾诗缇 胶原莹润卸妆啫喱3g×1袋</li>
+                  <li>②艾诗缇 胶原莹润洗面奶 2g× 1袋</li>
+                  <li>③艾诗缇 焕白亮肤肌底精华 (啫喱)0.5g×2袋</li>
+                  <li>④艾诗缇 净皙钻白化妆水 2ml×2袋</li>
+                  <li>⑤艾诗缇 净皙钻白美肌霜 0.7g×2袋</li>
+                  <li>⑥艾诗缇 净皙钻白深层防晒隔离美容液0.7g×2袋</li>
                 </ol>
-                <p>*仅限销售该产品的店铺。</p>
-                <p>*根据各店铺的库存情况，赠完为止。</p>
               </div>
             </div>
           </div>
           <div className={styles["foot"]}>
-            <h2 className={styles["activity-shop-name"]}>活动店铺</h2>
+            <h2 className={styles["activity-shop-name"]}>活动指定门店</h2>
             <ol>
               <li>ASTALIFT直营店：银座店、六本木店</li>
-              <li>杉木药店：浅草店、心斋桥店、新宿三丁目店</li>
             </ol>
+            <img className={styles["sakura-bottom"]} src={Sakura} alt="" />
           </div>
         </section>
         <section className={styles["description-film-history"]}>
@@ -222,7 +213,7 @@ function App() {
             )}
           >
             <div className={styles["title-part"]}>
-              <h4>焕白亮肤肌底精华（啫喱）60g</h4>
+              <h4>焕白亮肤肌底精华（啫喱）</h4>
               <img
                 className={cls(
                   styles["product-box-background"],
@@ -413,6 +404,7 @@ function App() {
               />
               <img
                 className={styles["illustration"]}
+                style={{ marginTop: "4em" }}
                 src={Foodillustration3}
                 alt=""
               />
@@ -445,6 +437,9 @@ function App() {
                   <p className="mail-code">邮编：104-0061</p>
                   <p className="addr">地址：东京都中央区银座 3丁目2-13</p>
                   <p className="open-time">营业时间：11:00～20:00</p>
+                  <p className={styles["appendix"]}>
+                    *3月18日~3月22日期间装修闭馆中。
+                  </p>
                 </div>
                 <div className={styles["list-item"]}>
                   <div className={styles["list-head"]}>
@@ -464,51 +459,53 @@ function App() {
               </div>
             </div>
             <div className={styles["shop-sect"]}>
-              <h4>杉木药店</h4>
+              <h2 className={styles["h2-title"]}>
+                以上产品也可以在杉药局各门店购买
+              </h2>
               <div className={styles["list"]}>
-                <div className={styles["list-item"]}>
-                  <div className={styles["list-head"]}>
-                    <img src={Shop3} alt="" />
-                  </div>
-                  <div className={styles["location"]}>
-                    <img src={LocationIcon} alt="" />
-                    浅草店
-                  </div>
-                  <p className="mail-code">邮编：111-0032</p>
-                  <p className="addr">地址：东京都台东区浅草 1丁目29-1</p>
-                  <p className="open-time">营业时间：9:00～23:00</p>
-                </div>
-                <div className={styles["list-item"]}>
-                  <div className={styles["list-head"]}>
-                    <img src={Shop4} alt="" />
-                  </div>
-                  <div className={styles["location"]}>
-                    <img src={LocationIcon} alt="" />
-                    心斋桥店
-                  </div>
-                  <p className="mail-code">邮编：542-0085</p>
-                  <p className="addr">
-                    地址：大阪府大阪市中央区心斋桥筋一丁目3番22号
-                  </p>
-                  <p className="open-time">营业时间：10:00～23:00</p>
-                </div>
                 <div className={styles["list-item"]}>
                   <div className={styles["list-head"]}>
                     <img src={Shop5} alt="" />
                   </div>
                   <div className={styles["location"]}>
                     <img src={LocationIcon} alt="" />
-                    新宿三丁目店
+                    杉药妆店 新宿三丁目店
                   </div>
                   <p className="mail-code">邮编：160-0022</p>
                   <p className="addr">
                     东京都新宿区新宿三丁目5番6号 Q 广场新宿三丁目 1楼
                   </p>
-                  <p className="open-time">营业时间：9:00～23:00</p>
+                  <p className="open-time">营业时间：9:00～23:30</p>
+                </div>
+                <div className={styles["list-item"]}>
+                  <div className={styles["list-head"]}>
+                    <img src={Shop3} alt="" />
+                  </div>
+                  <div className={styles["location"]}>
+                    <img src={LocationIcon} alt="" />
+                    杉药妆店 浅草店
+                  </div>
+                  <p className="mail-code">邮编：111-0032</p>
+                  <p className="addr">地址：东京都台东区浅草 1丁目29-1</p>
+                  <p className="open-time">营业时间：9:00～23:30</p>
                 </div>
               </div>
             </div>
+            <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+              <h5 className={cls(styles["shop-header"], styles["text-small"])}>
+                杉药局 新桥站前店
+              </h5>
+              <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：105-0004</p>
+              <p>
+                地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：东京都港区新桥1丁目12-9新桥PLAC
+              </p>
+              <p>营业时间：工作日/节庆日08:00~23:00</p>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周六周日10:00~23:00
+              </p>
+            </div>
           </section>
+
           <section className={styles["bottom-logo"]}>
             <img src={Logo2} alt="" />
           </section>

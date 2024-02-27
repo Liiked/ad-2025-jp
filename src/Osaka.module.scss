@@ -34,7 +34,7 @@ $grayFontColor: #4b4e53;
   margin-bottom: 32px;
 }
 
-.app {
+.app-osaka {
   max-width: 1080px;
   margin: 0 auto;
   font-size: 16px;
@@ -46,7 +46,7 @@ $grayFontColor: #4b4e53;
 
 .header {
   position: relative;
-  height: 1680px;
+  height: 1780px;
   width: 100%;
   z-index: 1;
   .bk-1 {
@@ -59,6 +59,7 @@ $grayFontColor: #4b4e53;
     display: flex;
     padding: 128px 64px 32px 64px;
     .left {
+      visibility: hidden;
       .title {
         font-family: "Simsun";
         color: #323849;
@@ -97,7 +98,7 @@ $grayFontColor: #4b4e53;
     }
   }
   .bottom-content {
-    margin-top: 1026px;
+    margin-top: 1100px;
     .description {
       visibility: hidden;
       margin-left: 60%;
@@ -228,6 +229,8 @@ $grayFontColor: #4b4e53;
   border-radius: 64px;
   margin-top: 80px;
   padding: 64px 32px 64px 32px;
+  position: relative;
+  z-index: 10;
   .part-title {
     text-align: center;
     img {
@@ -330,6 +333,9 @@ $grayFontColor: #4b4e53;
         }
         &.box-2 {
           width: 680px;
+        }
+        &.box-3 {
+          width: 720px;
         }
       }
       h4 {
@@ -469,6 +475,14 @@ $grayFontColor: #4b4e53;
   .shop-sect {
     width: 60%;
     margin: 0 auto;
+    .h2-title {
+      font-family: "STSong", "Simsun";
+      font-weight: bolder;
+      font-size: 36px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
     h4 {
       max-width: 10em;
       font-size: 28px;
@@ -498,6 +512,7 @@ $grayFontColor: #4b4e53;
           padding: 4px;
           border-radius: 1em;
           font-size: 18px;
+          font-weight: bold;
           max-width: 80%;
           margin-bottom: 8px;
           img {
@@ -513,6 +528,21 @@ $grayFontColor: #4b4e53;
   }
 }
 
+.shop-extra {
+  line-height: 1.2;
+  padding-bottom: 100px;
+  .shop-header {
+    color: $redColor;
+    margin-bottom: 6px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  p {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
+}
+
 .bottom-logo {
   padding-top: 60px;
   padding-bottom: 180px;
@@ -523,8 +553,9 @@ $grayFontColor: #4b4e53;
 }
 
 .bottom-background-area {
+  padding-top: 100px;
   background: url(@/assets/imgs/bottom_background.png) 20% 80% no-repeat,
-    linear-gradient(180deg, #cbd9ee 10%, #d5e7fe 15%);
+    linear-gradient(180deg, #cbd9ee 0%, #d5e7fe 15%);
   background-position: bottom;
-  background-size: contain;
+  background-size: cover;
 }

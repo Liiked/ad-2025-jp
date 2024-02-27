@@ -1,15 +1,16 @@
 import "./App.css";
-import styles from "./App.module.scss";
+import styles from "./Osaka.module.scss";
 import Back1 from "./assets/imgs/header-background_1.png";
 import Logo1 from "./assets/imgs/header__logo_1.png";
 import Logo2 from "./assets/imgs/header__logo_2.png";
-import ActivityBack from "./assets/imgs/activity_header.png";
-import Activity1 from "./assets/imgs/activity_1.png";
-import Activity2 from "./assets/imgs/activity_2.png";
+// import ActivityBack from "./assets/imgs/activity_header.png";
+// import Activity1 from "./assets/imgs/activity_1.png";
+// import Activity2 from "./assets/imgs/activity_2.png";
 import FilmTitle from "./assets/imgs/film_title.png";
 import AstaliftTitle from "./assets/imgs/astalift_title.png";
 import AssistFoodTitle from "./assets/imgs/assist_food_title.png";
-import ShopTitle from "./assets/imgs/shop_title.png";
+// import ShopTitle from "./assets/imgs/shop_title.png";
+import ShopIntroTitle from "./assets/imgs/shop_intro_title.png";
 import No01 from "./assets/imgs/no_01.png";
 import No02 from "./assets/imgs/no_02.png";
 import No03 from "./assets/imgs/no_03.png";
@@ -19,7 +20,7 @@ import Illustration3 from "./assets/imgs/illustration_3.png";
 import Illustration4 from "./assets/imgs/illustration_4.png";
 import DownArrow from "./assets/imgs/down_arrow.png";
 import TitleBox1 from "./assets/imgs/title_box_1.png";
-// import TitleBox2 from "./assets/imgs/title_box_2.png";
+import TitleBox2 from "./assets/imgs/title_box_2.png";
 import Product1 from "./assets/imgs/product_1.png";
 import Product2 from "./assets/imgs/product_2.png";
 import Product3 from "./assets/imgs/product_3.png";
@@ -30,19 +31,20 @@ import ProductIllustration3 from "./assets/imgs/product_illustration_3.png";
 import Foodillustration1 from "./assets/imgs/food_illustration_1.png";
 import Foodillustration2 from "./assets/imgs/food_illustration_2.png";
 import Foodillustration3 from "./assets/imgs/food_illustration_3.png";
-import Shop1 from "./assets/imgs/shop_1.png";
-import Shop2 from "./assets/imgs/shop_2.png";
-import Shop3 from "./assets/imgs/shop_3.png";
+// import Shop1 from "./assets/imgs/shop_1.png";
+// import Shop2 from "./assets/imgs/shop_2.png";
+// import Shop3 from "./assets/imgs/shop_3.png";
 import Shop4 from "./assets/imgs/shop_4.png";
-import Shop5 from "./assets/imgs/shop_5.png";
+// import Shop5 from "./assets/imgs/shop_5.png";
 import LocationIcon from "./assets/imgs/location_icon.png";
 import CompanyPic from "./assets/imgs/company.png";
+import Logo3 from "./assets/imgs/header__logo_3.png";
 import cls from "classnames";
 
 function App() {
   return (
     <>
-      <div className={styles["app"]}>
+      <div className={styles["app-osaka"]}>
         <section className={styles["header"]}>
           <img className={styles["bk-1"]} src={Back1} alt="" />
           <div className={styles["top-content"]}>
@@ -69,7 +71,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className={styles["activity"]}>
+        {/* <section className={styles["activity"]}>
           <div className={styles["head"]}>
             <img src={ActivityBack} alt="" />
             <div className={styles["description"]}>
@@ -133,7 +135,7 @@ function App() {
               <li>杉木药店：浅草店、心斋桥店、新宿三丁目店</li>
             </ol>
           </div>
-        </section>
+        </section> */}
         <section className={styles["description-film-history"]}>
           <section className={styles["part-title"]}>
             <img src={FilmTitle} alt="" />
@@ -222,13 +224,13 @@ function App() {
             )}
           >
             <div className={styles["title-part"]}>
-              <h4>焕白亮肤肌底精华（啫喱）60g</h4>
+              <h4>焕白亮肤肌底精华（啫喱）60g·40g</h4>
               <img
                 className={cls(
                   styles["product-box-background"],
-                  styles["box-1"]
+                  styles["box-3"]
                 )}
-                src={TitleBox1}
+                src={TitleBox2}
                 alt=""
               />
             </div>
@@ -429,88 +431,77 @@ function App() {
         <section className={styles["bottom-background-area"]}>
           <section className={styles["shop-list"]}>
             <div className={styles["shop-title"]}>
-              <img src={ShopTitle} alt="" />
+              <img src={ShopIntroTitle} alt="" />
             </div>
             <div className={styles["shop-sect"]}>
-              <h4>ASTALIFT 直营店</h4>
+              <h2 className={styles["h2-title"]}>
+                以上产品也可以在杉药局各门店购买
+              </h2>
               <div className={styles["list"]}>
-                <div className={styles["list-item"]}>
-                  <div className={styles["list-head"]}>
-                    <img src={Shop1} alt="" />
-                  </div>
-                  <div className={styles["location"]}>
-                    <img src={LocationIcon} alt="" />
-                    银座店（ASTALIFT GINZA）
-                  </div>
-                  <p className="mail-code">邮编：104-0061</p>
-                  <p className="addr">地址：东京都中央区银座 3丁目2-13</p>
-                  <p className="open-time">营业时间：11:00～20:00</p>
-                </div>
-                <div className={styles["list-item"]}>
-                  <div className={styles["list-head"]}>
-                    <img src={Shop2} alt="" />
-                  </div>
-                  <div className={styles["location"]}>
-                    <img src={LocationIcon} alt="" />
-                    六本木店（ASTALIFT ROPPONGI）
-                  </div>
-                  <p className="mail-code">邮编：107-0052</p>
-                  <p className="addr">
-                    地址：东京都港区赤坂 9丁目7-3 东京中城 WEST 富士胶片总部大楼
-                    1F
-                  </p>
-                  <p className="open-time">营业时间：10:00～19:00</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles["shop-sect"]}>
-              <h4>杉木药店</h4>
-              <div className={styles["list"]}>
-                <div className={styles["list-item"]}>
-                  <div className={styles["list-head"]}>
-                    <img src={Shop3} alt="" />
-                  </div>
-                  <div className={styles["location"]}>
-                    <img src={LocationIcon} alt="" />
-                    浅草店
-                  </div>
-                  <p className="mail-code">邮编：111-0032</p>
-                  <p className="addr">地址：东京都台东区浅草 1丁目29-1</p>
-                  <p className="open-time">营业时间：9:00～23:00</p>
-                </div>
                 <div className={styles["list-item"]}>
                   <div className={styles["list-head"]}>
                     <img src={Shop4} alt="" />
                   </div>
                   <div className={styles["location"]}>
                     <img src={LocationIcon} alt="" />
-                    心斋桥店
+                    杉药妆店 心斋桥店
                   </div>
                   <p className="mail-code">邮编：542-0085</p>
-                  <p className="addr">
-                    地址：大阪府大阪市中央区心斋桥筋一丁目3番22号
-                  </p>
-                  <p className="open-time">营业时间：10:00～23:00</p>
-                </div>
-                <div className={styles["list-item"]}>
-                  <div className={styles["list-head"]}>
-                    <img src={Shop5} alt="" />
-                  </div>
-                  <div className={styles["location"]}>
-                    <img src={LocationIcon} alt="" />
-                    新宿三丁目店
-                  </div>
-                  <p className="mail-code">邮编：160-0022</p>
-                  <p className="addr">
-                    东京都新宿区新宿三丁目5番6号 Q 广场新宿三丁目 1楼
-                  </p>
-                  <p className="open-time">营业时间：9:00～23:00</p>
+                  <p className="addr">地址：大阪府大阪市中桥1丁目3-22</p>
+                  <p className="open-time">营业时间：10:00～24:00</p>
                 </div>
               </div>
             </div>
+            <div
+              className={cls(styles["shop-sect"], styles["shop-extra"])}
+              style={{ marginTop: "4em" }}
+            >
+              <h5 className={cls(styles["shop-header"])}>
+                杉药妆店 道顿掘东店
+              </h5>
+              <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：542-0071</p>
+              <p>
+                地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市中央区道顿据一丁目2-1DO
+                B0X103号
+              </p>
+              <p>营业时间：00:00~23:59</p>
+            </div>
+            <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+              <h5 className={cls(styles["shop-header"])}>杉药局瓦町一丁目店</h5>
+              <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：541-0048</p>
+              <p>
+                地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市中央区瓦町一丁目6-10JP
+                BLDG.1F
+              </p>
+              <p>营业时间：工作日08:00~22:00周六周日/节庆日09:00~22:00</p>
+            </div>
+            <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+              <h5 className={cls(styles["shop-header"])}>杉药局LINKSUMEDA店</h5>
+              <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：530-0011</p>
+              <p>
+                地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市北区大深町1-1YODOBASHI梅田TOWER地下1F
+              </p>
+              <p>营业时间：09:30~22:00</p>
+            </div>
+            <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+              <h5 className={cls(styles["shop-header"])}>杉药妆店北心斋桥店</h5>
+              <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：542-0081</p>
+              <p>
+                地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市中央区南船场三丁目5-17GATO心高桥筋BLDG.
+              </p>
+              <p>营业时间：工作日08:00~23:00周六周日/节庆日09:00~23:00</p>
+            </div>
+            <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+              <h5 className={cls(styles["shop-header"])}>杉药局梅田店</h5>
+              <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：530-0012</p>
+              <p>
+                地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市北区芝田一丁目1-23
+              </p>
+              <p>营业时间：07:00~23:00</p>
+            </div>
           </section>
           <section className={styles["bottom-logo"]}>
-            <img src={Logo2} alt="" />
+            <img src={Logo3} alt="" />
           </section>
         </section>
       </div>

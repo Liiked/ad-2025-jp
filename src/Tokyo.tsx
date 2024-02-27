@@ -3,13 +3,15 @@ import styles from "./Tokyo.module.scss";
 import Back1 from "./assets/imgs/header-background_1.png";
 import Logo1 from "./assets/imgs/header__logo_1.png";
 import Logo2 from "./assets/imgs/header__logo_2.png";
+import Logo3 from "./assets/imgs/header__logo_3.png";
 import ActivityBack from "./assets/imgs/activity_header.png";
 import Activity1 from "./assets/imgs/tokyo_activity_product_1.png";
 import Activity2 from "./assets/imgs/tokyo_activity_product_2.png";
 import FilmTitle from "./assets/imgs/film_title.png";
 import AstaliftTitle from "./assets/imgs/astalift_title.png";
 import AssistFoodTitle from "./assets/imgs/assist_food_title.png";
-import ShopTitle from "./assets/imgs/shop_title.png";
+// import ShopTitle from "./assets/imgs/shop_title.png";
+import ActivityShops from "./assets/imgs/activity_shops.png";
 import No01 from "./assets/imgs/no_01.png";
 import No02 from "./assets/imgs/no_02.png";
 import No03 from "./assets/imgs/no_03.png";
@@ -421,7 +423,7 @@ function App() {
         <section className={styles["bottom-background-area"]}>
           <section className={styles["shop-list"]}>
             <div className={styles["shop-title"]}>
-              <img src={ShopTitle} alt="" />
+              <img src={ActivityShops} alt="" />
             </div>
             <div className={styles["shop-sect"]}>
               <h4>ASTALIFT 直营店</h4>
@@ -473,7 +475,7 @@ function App() {
                   </div>
                   <p className="mail-code">邮编：160-0022</p>
                   <p className="addr">
-                    东京都新宿区新宿三丁目5番6号 Q 广场新宿三丁目 1楼
+                    东京都新宿区新宿三丁目5-6 Q Plaza新宿三丁目1F
                   </p>
                   <p className="open-time">营业时间：9:00～23:30</p>
                 </div>
@@ -497,7 +499,8 @@ function App() {
               </h5>
               <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：105-0004</p>
               <p>
-                地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：东京都港区新桥1丁目12-9新桥PLAC
+                地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：东京都港区新桥1丁目12-9新桥PLACE
+                1F
               </p>
               <p>营业时间：工作日/节庆日08:00~23:00</p>
               <p>
@@ -507,7 +510,7 @@ function App() {
           </section>
 
           <section className={styles["bottom-logo"]}>
-            <img src={Logo2} alt="" />
+            <img src={Logo3} alt="" />
           </section>
         </section>
       </div>

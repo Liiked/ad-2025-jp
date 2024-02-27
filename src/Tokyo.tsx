@@ -40,8 +40,12 @@ import LocationIcon from "./assets/imgs/location_icon.png";
 import CompanyPic from "./assets/imgs/company.png";
 import Sakura from "./assets/imgs/sakura.png";
 import cls from "classnames";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "富士胶片-艾诗缇买赠活动-东京版";
+  }, []);
   return (
     <>
       <div className={styles["app-tokyo"]}>

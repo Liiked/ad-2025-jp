@@ -60,12 +60,26 @@ $grayFontColor: #4b4e53;
     padding: 270px 64px 32px 64px;
     justify-content: space-between;
     .left {
+      margin-top: 620px;
       .title {
         font-family: "Simsun";
         color: #323849;
         font-size: 46px;
         letter-spacing: -2px;
+        font-weight: bold;
         line-height: 1.4;
+        position: relative;
+        text-shadow: 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff,
+          0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff,
+          0 0 6px #fff;
+        // &::after {
+        //   color: white;
+        //   position: absolute;
+        //   left: 0;
+        //   font-weight: 1000;
+        //   z-index: -1;
+        //   content: attr(data-text);
+        // }
       }
       .sub-title {
         font-family: "Simsun";
@@ -97,7 +111,7 @@ $grayFontColor: #4b4e53;
     }
   }
   .bottom-content {
-    margin-top: 1026px;
+    margin-top: 426px;
     .description {
       visibility: hidden;
       margin-left: 60%;

@@ -53,8 +53,13 @@ function App() {
           <img className={styles["bk-1"]} src={Back1} alt="" />
           <div className={styles["top-content"]}>
             <div className={styles["left"]}>
-              <h1 className={styles["title"]}>
-                富士胶片 <br />
+              <h1 data-text="富士胶片" className={styles["title"]}>
+                富士胶片
+              </h1>
+              <h1
+                data-text="来店即可获赠精美礼品！"
+                className={styles["title"]}
+              >
                 来店即可获赠精美礼品！
               </h1>
               <div className={styles["sub-title"]}>

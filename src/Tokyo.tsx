@@ -35,6 +35,7 @@ import Foodillustration3 from "./assets/imgs/food_illustration_3.png";
 import Shop1 from "./assets/imgs/shop_1.png";
 import Shop2 from "./assets/imgs/shop_2.png";
 import Shop3 from "./assets/imgs/shop_3.png";
+import Shop4 from "./assets/imgs/shop_4.png";
 import Shop5 from "./assets/imgs/shop_5.png";
 import LocationIcon from "./assets/imgs/location_icon.png";
 import CompanyPic from "./assets/imgs/company.png";
@@ -473,6 +474,7 @@ function App() {
               <h2 className={styles["h2-title"]}>
                 以上产品也可以在杉药局各门店购买
               </h2>
+              <h4>&lt; 东京店铺 &gt;</h4>
               <div className={styles["list"]}>
                 <div className={styles["list-item"]}>
                   <div className={styles["list-head"]}>
@@ -516,6 +518,90 @@ function App() {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周六周日10:00~23:00
               </p>
             </div>
+            <div className={styles["shop-sect"]}>
+              <h4>&lt; 大阪店铺 &gt;</h4>
+              <div className={styles["list"]}>
+                <div className={styles["list-item"]}>
+                  <div className={styles["list-head"]}>
+                    <img src={Shop4} alt="" />
+                  </div>
+                  <div className={styles["location"]}>
+                    <img src={LocationIcon} alt="" />
+                    杉药妆店 心斋桥店
+                  </div>
+                  <p className="mail-code">邮编：542-0085</p>
+                  <p className="addr">地址：大阪府大阪市中桥1丁目3-22</p>
+                  <p className="open-time">营业时间：10:00～24:00</p>
+                </div>
+              </div>
+            </div>
+            <section className={styles["shop-list"]}>
+              <div
+                className={cls(styles["shop-sect"], styles["shop-extra"])}
+                style={{ marginTop: "4em" }}
+              >
+                <h5
+                  className={cls(styles["shop-header"], styles["text-small"])}
+                >
+                  杉药妆店 道顿掘东店
+                </h5>
+                <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：542-0071</p>
+                <p>
+                  地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市中央区道顿据一丁目2-1DO
+                  B0X103号
+                </p>
+                <p>营业时间：00:00~23:59</p>
+              </div>
+              <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+                <h5
+                  className={cls(styles["shop-header"], styles["text-small"])}
+                >
+                  杉药局瓦町一丁目店
+                </h5>
+                <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：541-0048</p>
+                <p>
+                  地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市中央区瓦町一丁目6-10JP
+                  BLDG.1F
+                </p>
+                <p>营业时间：工作日08:00~22:00周六周日/节庆日09:00~22:00</p>
+              </div>
+              <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+                <h5
+                  className={cls(styles["shop-header"], styles["text-small"])}
+                >
+                  杉药局LINKSUMEDA店
+                </h5>
+                <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：530-0011</p>
+                <p>
+                  地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市北区大深町1-1YODOBASHI梅田TOWER地下1F
+                </p>
+                <p>营业时间：09:30~22:00</p>
+              </div>
+              <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+                <h5
+                  className={cls(styles["shop-header"], styles["text-small"])}
+                >
+                  杉药妆店北心斋桥店
+                </h5>
+                <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：542-0081</p>
+                <p>
+                  地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市中央区南船场三丁目5-17GATO心高桥筋BLDG.
+                </p>
+                <p>营业时间：工作日08:00~23:00周六周日/节庆日09:00~23:00</p>
+              </div>
+              <div className={cls(styles["shop-sect"], styles["shop-extra"])}>
+                <h5
+                  className={cls(styles["shop-header"], styles["text-small"])}
+                >
+                  杉药局梅田店
+                </h5>
+                <p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：530-0012</p>
+                <p>
+                  地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：大阪府大阪市北区芝田一丁目1-23
+                </p>
+                <p>营业时间：07:00~23:00</p>
+              </div>
+            </section>
           </section>
 
           <section className={styles["bottom-logo"]}>

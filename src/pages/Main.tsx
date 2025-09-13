@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "../App.css";
 import styles from "./Main.module.scss";
 import Section1 from "./Section1";
+import Section2 from "./Section2";
 
 export default function Main() {
   useEffect(() => {
@@ -10,6 +11,7 @@ export default function Main() {
   return (
     <div className={styles["app"]}>
       <Section1 />
+      <Section2 />
     </div>
   );
 }

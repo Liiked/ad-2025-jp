@@ -3,6 +3,7 @@ import "../App.css";
 import styles from "./Main.module.scss";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
+import Section3 from "./Section3";
 
 export default function Main() {
   useEffect(() => {
@@ -12,6 +13,7 @@ export default function Main() {
     <div className={styles["app"]}>
       <Section1 />
       <Section2 />
+      <Section3 />
     </div>
   );
 }
